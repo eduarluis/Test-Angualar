@@ -1,0 +1,22 @@
+<div class="text-center mb-4">
+    <h4>{{ title }}</h4>
+    <hr>
+</div>
+<table class="table">
+    <thead class="thead-dark">
+        <tr>
+            <th scope="col">name</th>
+            <th scope="col">patronus</th>
+            <th scope="col">age</th>
+            <th scope="col">image</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let item of teachers">
+            <th>{{ item.name }}</th>
+            <td>{{ item.patronus }}</td>
+            <td>{{ item.dateOfBirth }}</td>
+            <td><img style="width: 100px;" src="{{ item.image }}" alt=""></td>
+        </tr>
+    </tbody>
+</table>
