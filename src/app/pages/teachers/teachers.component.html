@@ -12,11 +12,11 @@
         </tr>
     </thead>
     <tbody>
-        <tr *ngFor="let item of teachers">
-            <th>{{ item.name }}</th>
-            <td>{{ item.patronus }}</td>
-            <td>{{ item.dateOfBirth }}</td>
-            <td><img style="width: 100px;" src="{{ item.image }}" alt=""></td>
+        <tr *ngFor="let teacher of teachers">
+            <th>{{ teacher.name }}</th>
+            <td>{{ teacher.patronus }}</td>
+            <td>{{ teacher.dateOfBirth }}</td>
+            <td><img class="img-thumbnail" style="width:70px" src="{{ teacher.image }}" alt=""></td>
         </tr>
     </tbody>
 </table>

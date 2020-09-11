@@ -6,11 +6,14 @@ import { RouterModule, Routes } from '@angular/router';
 import { TeachersComponent } from '../pages/teachers/teachers.component';
 import { StudentsComponent } from '../pages/students/students.component';
 import { CharactersComponent } from '../pages/characters/characters.component';
+import { NopagefoundComponent } from './nopagefound/nopagefound.component';
 
 const routes: Routes = [
   { path: 'characters', component: CharactersComponent },
   { path: 'teachers', component: TeachersComponent },
   { path: 'students', component: StudentsComponent },
+  { path: '',redirectTo:'/teachers', component: StudentsComponent },
+  { path: '**', component: NopagefoundComponent },
 ];
 
 @NgModule({
